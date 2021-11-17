@@ -34,7 +34,7 @@ namespace MvcMovie.Models
         [StringLength(30)]
         public string Birthplace { get; set; }
         // 1
-        [Range(0, int.MaxValue, ErrorMessage = "Can't be negative")]
+        [Range(0, double.MaxValue, ErrorMessage = "Can't be negative")]
         [Display(Name = "Net Worth")]
         [DataType(DataType.Currency)]
         public decimal Networth { get; set; }
